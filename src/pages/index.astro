@@ -13,39 +13,13 @@ import OrderItem from "../components/OrderItem.astro";
     <title>Astro</title>
   </head>
   <body>
-    <h1>Astro + Open Props</h1>
     <main>
-      <ul role="list" class="order-list">
-        <OrderItem
-          title="Micro Backpack"
-          description="Are you a minimalist looking for a compact carry option? The Micro Backpack is the perfect size for your essential everyday carry items. Wear it like a backpack or carry it like a satchel for all-day use."
-          status="delivered"
-          price="90.00"
-          img="test.jpg"
-        />
-        <OrderItem
-          title="Nomad Shopping Tote"
-          description="This durable shopping tote is perfect for the world traveler. Its yellow canvas construction is water, fray, tear resistant. The matching handle, backpack straps, and shoulder loops provide multiple carry options for a day out on your next adventure."
-          status="pending"
-          price="70.00"
-          img="test-2.jpg"
-        />
-      </ul>
 
       <ul role="list" class="order-list">
         <OrderItem
-          title="Micro Backpack"
-          description="Are you a minimalist looking for a compact carry option? The Micro Backpack is the perfect size for your essential everyday carry items. Wear it like a backpack or carry it like a satchel for all-day use."
-          status="delivered"
-          price="90.00"
+          productName="Oat Drink Barista Organic"
+          description="An organically creamy, rich, and organic oat drink that is not cow’s milk, not a cream, and not really a creamer but a nice organic upgrade for your coffee. It might not deliver on the extremely high expectations set by our original Barista edition, but what it lacks in compared functionality, it makes up for in organic ingredients. Think of it more as a barista version of our organic oat drink than an organic version of our Barista edition. Made for professional organic baristas and people who like to play one at home."
           img="test.jpg"
-        />
-        <OrderItem
-          title="Nomad Shopping Tote"
-          description="This durable shopping tote is perfect for the world traveler. Its yellow canvas construction is water, fray, tear resistant. The matching handle, backpack straps, and shoulder loops provide multiple carry options for a day out on your next adventure."
-          status="pending"
-          price="70.00"
-          img="test-2.jpg"
         />
       </ul>
     </main>
@@ -53,31 +27,7 @@ import OrderItem from "../components/OrderItem.astro";
 </html>
 
 <style>
-  [data-icon] {
-    width: var(--size-1);
-    color: red;
-  }
-  h1 {
-    font-size: var(--font-size-fluid-3);
-    text-align: center;
-  }
-  .order-list {
-    display: grid;
-    gap: 1px;
-    padding: var(--size-3);
-    background: var(--gray-1);
-    /* max-width: 700px;
-    margin-inline: auto;
-    padding: var(--size-3); */
-  }
-
-  main {
-    max-width: 1000px;
-    margin-inline: auto;
-    display: grid;
-    align-items: start;
-    grid-template-columns: min(300px, 100%) 1fr;
-    gap: var(--size-3);
-    padding: var(--size-3);
-  }
+  body {
+    background-color: black;
+}
 </style>
