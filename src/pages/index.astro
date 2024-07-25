@@ -1,7 +1,9 @@
 ---
 import "../styles/global.css";
 
-import OrderItem from "../components/OrderItem.astro";
+import ProductHero from "../components/ProductHero.astro";
+import Accordion from "../components/Accordion.astro";
+import ProductBody from "../components/ProductBody.astro";
 ---
 
 <html lang="en">
@@ -10,24 +12,32 @@ import OrderItem from "../components/OrderItem.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>productName</title>
   </head>
   <body>
     <main>
+      <ProductHero
+        productName="Oat Drink Barista Organic"
+        description="An organically creamy, rich, and organic oat drink that is not cow’s milk, not a cream, and not really a creamer but a nice organic upgrade for your coffee. It might not deliver on the extremely high expectations set by our original Barista edition, but what it lacks in compared functionality, it makes up for in organic ingredients. Think of it more as a barista version of our organic oat drink than an organic version of our Barista edition. Made for professional organic baristas and people who like to play one at home."
+        img="test.jpg"
+      />
 
-      <ul role="list" class="order-list">
-        <OrderItem
-          productName="Oat Drink Barista Organic"
-          description="An organically creamy, rich, and organic oat drink that is not cow’s milk, not a cream, and not really a creamer but a nice organic upgrade for your coffee. It might not deliver on the extremely high expectations set by our original Barista edition, but what it lacks in compared functionality, it makes up for in organic ingredients. Think of it more as a barista version of our organic oat drink than an organic version of our Barista edition. Made for professional organic baristas and people who like to play one at home."
-          img="test.jpg"
-        />
-      </ul>
+<ProductBody />
+
     </main>
   </body>
 </html>
 
 <style>
-  body {
+  html, body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
     background-color: black;
-}
+  }
+
+  main {
+    max-width: 1440px;
+    width: 100%;
+  }
 </style>

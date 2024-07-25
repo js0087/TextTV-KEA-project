@@ -1,0 +1,130 @@
+
+
+<section>
+    <div class="nutrition-facts">
+        <h3>Nutritional Values</h3>
+        <h4>Nutrition Facts per 250ml:</h4>
+        <div class="fact">
+            <span class="label">Calories</span>
+            <span class="value">170</span>
+        </div>
+        <div class="fact">
+            <span class="label">Fat</span>
+            <span class="value">9g (12%*)</span>
+        </div>
+        <div class="sub-fact">
+            <span class="label">of which saturates</span>
+            <span class="value">1g (5%*)</span>
+        </div>
+        <div class="sub-fact">
+            <span class="label">+ Trans</span>
+            <span class="value">0g</span>
+        </div>
+        <div class="fact">
+            <span class="label">Carbohydrates</span>
+            <span class="value">18g</span>
+        </div>
+        <div class="fact">
+            <span class="label">Fibre</span>
+            <span class="value">2g (7%*)</span>
+        </div>
+        <div class="sub-fact">
+            <span class="label">of which sugars</span>
+            <span class="value">7g (7%*)</span>
+        </div>
+        <div class="fact">
+            <span class="label">Protein</span>
+            <span class="value">3g</span>
+        </div>
+        <div class="fact">
+            <span class="label">Cholesterol</span>
+            <span class="value">0mg</span>
+        </div>
+        <div class="fact">
+            <span class="label">Sodium</span>
+            <span class="value">90mg (4%*)</span>
+        </div>
+        <div class="fact">
+            <span class="label">Potassium</span>
+            <span class="value">650mg (14%*)</span>
+        </div>
+        <div class="fact">
+            <span class="label">Calcium</span>
+            <span class="value">350mg (27%*)</span>
+        </div>
+        <div class="footnote">
+            <h4>Linoleic acid 1.5g</h4>
+            <h4>* % Daily Value. 5% or less is a little, 15% or more is a lot.</h4>
+        </div>
+    </div>
+</section>
+
+<style>
+ .nutrition-facts {
+    border: 1px solid #000;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    font-size: 18px;
+}
+
+.nutrition-facts h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    text-align: left;  /* Align title to the left */
+}
+
+.nutrition-facts h4 {
+    margin: 5px 0;
+    text-align: left;  /* Align title to the left */
+}
+
+.fact, .sub-fact {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    position: relative;
+}
+
+.fact::after, .sub-fact::after {
+    content: "....................................................................................................";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.fact .label, .sub-fact .label {
+    background-color: black;
+    padding-right: 5px;
+    z-index: 1;
+}
+
+.fact .value, .sub-fact .value {
+    background-color: black;
+    padding-left: 5px;
+    z-index: 1;
+}
+
+.sub-fact {
+    padding-left: 10px;
+    background-color: black;
+    z-index: 1;
+}
+
+.footnote {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.footnote h4 {
+    margin: 5px 0;
+    text-align: left;  /* Align title to the left */
+}
+</style>

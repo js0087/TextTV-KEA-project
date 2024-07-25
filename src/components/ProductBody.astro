@@ -1,0 +1,91 @@
+---
+import Accordion from "../components/Accordion.astro";
+import Productinfo from "../components/Productinfo.astro";
+---
+
+<section class="boxes-section">
+  <div class="box">
+    <div class="content">
+      <h2>it’s micro-foamable!</h2>
+      <p>
+        We try not to overuse expressions like “super-premium,” but if you’re an
+        oat drink and/or coffee connoisseur who strongly believes coffee should
+        stay plant-based even when mixed with other beverages, this rich,
+        creamy, and micro-foamable drink is the super-premium product we made to
+        go with your super-premium lifestyle. It can be stored for a really long
+        time. The rich and neutral taste comes from a combination of tasty oats
+        and unsaturated fat that will make any hot drink, like coffee, tea, or
+        hot chocolate, seem like it’s undergone some kind of upgrading process.
+        No, make that a super-premium upgrading process.
+      </p>
+    </div>
+    <div class="content">
+      <h2>For the pros (and non-pros too)</h2>
+      <p>
+        We never put anything in our products that isn't absolutely necessary
+        and absolutely approved for consumption. For instance, the acidity
+        regulator we use is to help the Barista perform to the professional
+        expectations of coffee experts, so even if you happen to be more of a
+        breakfast brewer, it should answer your needs too. Even though we don’t
+        think anyone drinks coffee to get essential nutrients, we thought you
+        might appreciate that we put the same vitamins and minerals in the
+        Barista as in most of our other oat drinks. No dairy, no soy and no
+        separating in the coffee.
+      </p>
+    </div>
+    <Accordion
+      q1="Question Title"
+      a1="This is the answer to the question asked above"
+      q2="Question Title"
+      a2="This is the answer to the question asked above"
+      q3="Question Title"
+      a3="This is the answer to the question asked above"
+      q4="Question Title"
+      a4="This is the answer to the question asked above"
+    />
+  </div>
+  <div class="box">
+    <div class="content">
+        <h3>Ingredients</h3>
+        <p>
+          Vand, HAVRE 10 %, rapsolie, surhedsregulerende middel
+          (dikaliumphosphat), mineral (calciumcarbonat), salt, vitaminer (D2,
+          riboflavin, B12).
+        </p>
+      </div>
+    <Productinfo />
+  </div>
+</section>
+
+<style>
+  .boxes-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .box {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .box h2 {
+    margin: 0 0 10px;
+    font-size: 56px;
+    line-height: 0.77;
+  }
+
+  @media (max-width: 768px) {
+    .boxes-section {
+      grid-template-columns: 1fr; /* Single column layout on mobile */
+    }
+  }
+</style>

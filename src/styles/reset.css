@@ -1,45 +1,45 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
 html {
-    -webkit-text-size-adjust: none;
-    -webkit-font-smoothing: antialiased;
-    block-size: 100%;
-    color: var(--gray-7);
-    font-family: var(--font-sans);
-    line-height: var(--font-lineheight-3);
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  block-size: 100%;
+  color: white;
+  font-family: var(--font-sans);
+  line-height: var(--font-lineheight-3);
 }
 
 body {
-    min-block-size: 100%;
+  min-block-size: 100%;
 }
 
 img,
 picture,
 video,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 ul:where([role="list"]),
 ol:where([role="list"]) {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 p,
@@ -49,13 +49,30 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
-    font-size: initial;
+  overflow-wrap: break-word;
+  font-size: initial;
+  text-align: left;
 }
 
-h1,
-h2,
-h3 {
-    color: var(--gray-9);
-    line-height: var(--font-lineheight-0);
+h1 {
+  font-size: clamp(
+    4rem,
+    8vw,
+    10rem
+  ); /* Minimum 2rem, preferred 8% of viewport width, maximum 9rem */
+  line-height: 0.77;
+  padding-bottom: clamp(
+    1rem,
+    4vw,
+    2rem
+  ); /* Minimum 1rem, preferred 4% of viewport width, maximum 2rem */
+}
+
+p {
+  font-size: clamp(
+    14px,
+    2vw,
+    20px
+  ); /* Minimum 14px, preferred 2% of viewport width, maximum 20px */
+  text-align: left;
 }
