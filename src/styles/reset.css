@@ -12,13 +12,26 @@ html {
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   block-size: 100%;
-  color: white;
-  font-family: var(--font-sans);
-  line-height: var(--font-lineheight-3);
+  color: var(--color-primary-white);
 }
 
 body {
   min-block-size: 100%;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400%;
+  background-image: url("/public/Textures.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top left;
+  z-index: 1; /* ensure it appears above the body content */
+  pointer-events: none; /* allow clicks to pass through the overlay */
 }
 
 img,
@@ -52,6 +65,7 @@ h6 {
   overflow-wrap: break-word;
   font-size: initial;
   text-align: left;
+  font-family: "MagdaPro", sans-serif;
 }
 
 h1 {
@@ -66,13 +80,25 @@ h1 {
     4vw,
     2rem
   ); /* Minimum 1rem, preferred 4% of viewport width, maximum 2rem */
+  font-family: "Petra", sans-serif;
+  letter-spacing: 0.07em;
+  color: var( --color-secondary-pink);
 }
 
-p {
+h2,
+h3,
+h4 {
+  color: var(--color-primary-blue);
+}
+
+p,
+span {
   font-size: clamp(
     14px,
     2vw,
     20px
   ); /* Minimum 14px, preferred 2% of viewport width, maximum 20px */
   text-align: left;
+  font-family: "MagdaMono", sans-serif;
+  line-height: 1.2;
 }

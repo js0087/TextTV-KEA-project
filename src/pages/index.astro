@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-
+import "../styles/variables.css";
 import ProductHero from "../components/ProductHero.astro";
 import Accordion from "../components/Accordion.astro";
 import ProductBody from "../components/ProductBody.astro";
@@ -16,6 +16,10 @@ import ProductBody from "../components/ProductBody.astro";
   </head>
   <body>
     <main>
+      <header class="header">
+        <h1>Products</h1>
+        <div class="header-line"></div>
+      </header>
       <ProductHero
         productName="Oat Drink Barista Organic"
         description="An organically creamy, rich, and organic oat drink that is not cow’s milk, not a cream, and not really a creamer but a nice organic upgrade for your coffee. It might not deliver on the extremely high expectations set by our original Barista edition, but what it lacks in compared functionality, it makes up for in organic ingredients. Think of it more as a barista version of our organic oat drink than an organic version of our Barista edition. Made for professional organic baristas and people who like to play one at home."
@@ -40,4 +44,24 @@ import ProductBody from "../components/ProductBody.astro";
     max-width: 1440px;
     width: 100%;
   }
+
+  header {
+  padding: var(--spacing-token-4) 0;
+  text-align: center;
+  color: var(--color-primary-white);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-family: "MagdaPro";
+  color: var(--color-primary-white);
+}
+
+.header-line {
+  height: 16px;
+  background-color: var( --color-secondary-pink);
+
+}
+
 </style>

@@ -1,1 +1,16 @@
 @import "./reset.css";
+
+@font-face {
+    font-family: 'MagdaMono';
+    src: url('/public/fonts/FontFont\ -\ MagdaCleanMonoOT.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'MagdaPro';
+    src: url('/public/fonts/MagdaPro-Book.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Petra';
+    src: url('/public/fonts/PetraAntikvaPro-Regular.otf') format('opentype');
+  }
