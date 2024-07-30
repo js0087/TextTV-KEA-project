@@ -1,34 +1,34 @@
 @import "./reset.css";
 :root {
-    /* Spacing tokens - Values from Figma @ oatly.com */
-    --spacing-token-0: 0;
-    --spacing-token-1: 8px;
-    --spacing-token-2: 16px;
-    --spacing-token-3: 24px;
-    --spacing-token-4: 32px;
-    --spacing-token-5: 48px;
-    --spacing-token-6: 64px;
-    --spacing-token-7: 96px;
-    --spacing-token-8: 144px;
-  
-    /* Primary Colors */
-    --color-primary-white: #fff;
-    --color-primary-black: #000;
-    --color-primary-blue: #98c5d3;
-    --color-primary-brown: #a0632d;
-    --color-primary-gray: #c6c6c6;
-    --color-primary-pink: #f8c8d8;
-    --color-primary-purple: #a67eb1;
-    --color-primary-yellow: #fdcf85;
-  
-    /* Secondary Colors */
-    --color-secondary-dark-blue: #24356a;
-    --color-secondary-dark-gray: #444;
-    --color-secondary-green: #68c74e;
-    --color-secondary-light-gray: #eee;
-    --color-secondary-medium-gray: #888;
-    --color-secondary-pink: #fbcccc;
-    --color-secondary-red: #e43e39;
+  /* Spacing tokens - Values from Figma @ oatly.com */
+  --spacing-token-0: 0;
+  --spacing-token-1: 8px;
+  --spacing-token-2: 16px;
+  --spacing-token-3: 24px;
+  --spacing-token-4: 32px;
+  --spacing-token-5: 48px;
+  --spacing-token-6: 64px;
+  --spacing-token-7: 96px;
+  --spacing-token-8: 144px;
+
+  /* Primary Colors */
+  --color-primary-white: #fff;
+  --color-primary-black: #000;
+  --color-primary-blue: #98c5d3;
+  --color-primary-brown: #a0632d;
+  --color-primary-gray: #c6c6c6;
+  --color-primary-pink: #f8c8d8;
+  --color-primary-purple: #a67eb1;
+  --color-primary-yellow: #fdcf85;
+
+  /* Secondary Colors */
+  --color-secondary-dark-blue: #24356a;
+  --color-secondary-dark-gray: #444;
+  --color-secondary-green: #68c74e;
+  --color-secondary-light-gray: #eee;
+  --color-secondary-medium-gray: #888;
+  --color-secondary-pink: #fbcccc;
+  --color-secondary-red: #e43e39;
 
   /* Desktop */
   --font-size-headings-xs: 34px;
@@ -48,25 +48,23 @@
   --font-size-paragraphs-l: 20px;
   --font-size-paragraphs-xl: 24px;
   --font-size-paragraphs-xxl: 32px;
-  
-  /* Desktop */
-  --font-size-headings-xs: 28px;
-  --font-size-headings-s: 32px;
-  --font-size-headings-m: 34px;
-  --font-size-headings-l: 48px;
-  --font-size-headings-xl: 68px;
-  --font-size-headings-xxl: 88px;
-  --font-size-headings-magda-pro---special-xs: 14px;
-  --font-size-headings-magda-pro---special-m: 18px;
-  --font-size-headings-magda-pro---special-s: 18px;
-  --font-size-headings-magda-pro---special-l: 24px;
-  --font-size-headings-magda-pro---special-xl: 32px;
-  --font-size-paragraphs-xs: 14px;
-  --font-size-paragraphs-s: 16px;
-  --font-size-paragraphs-m: 18px;
-  --font-size-paragraphs-l: 20px;
-  --font-size-paragraphs-xl: 24px;
-  --font-size-paragraphs-xxl: 28px;
-  }
 
-
+  /* Mobile */
+  --mobile-font-size-headings-xs: 28px;
+  --mobile-font-size-headings-s: 32px;
+  --mobile-font-size-headings-m: 34px;
+  --mobile-font-size-headings-l: 48px;
+  --mobile-font-size-headings-xl: 68px;
+  --mobile-font-size-headings-xxl: 88px;
+  --mobile-font-size-headings-magda-pro-special-xs: 14px;
+  --mobile-font-size-headings-magda-pro-special-s: 18px;
+  --mobile-font-size-headings-magda-pro-special-m: 18px;
+  --mobile-font-size-headings-magda-pro-special-l: 24px;
+  --mobile-font-size-headings-magda-pro-special-xl: 32px;
+  --mobile-font-size-paragraphs-xs: 14px;
+  --mobile-font-size-paragraphs-s: 16px;
+  --mobile-font-size-paragraphs-m: 18px;
+  --mobile-font-size-paragraphs-l: 20px;
+  --mobile-font-size-paragraphs-xl: 24px;
+  --mobile-font-size-paragraphs-xxl: 28px;
+}
