@@ -25,7 +25,7 @@ body::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 400%;
+  height: 200%;
   background-image: url("/public/Textures.png");
   background-repeat: repeat;
   background-size: auto;
@@ -63,9 +63,9 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-  font-size: initial;
   text-align: left;
   font-family: "MagdaPro", sans-serif;
+  line-height: 1.2;
 }
 
 h1 {
@@ -89,6 +89,7 @@ h2,
 h3,
 h4 {
   color: var(--color-primary-blue);
+  font-size: var(--font-size-headings-magda-pro---special-xl);
 }
 
 p,

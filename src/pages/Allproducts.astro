@@ -1,0 +1,198 @@
+---
+import "../styles/global.css";
+import "../styles/variables.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>productName</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <h2>Start Page</h2>
+        <div class="header-line"></div>
+      </header>
+      <div class="product">
+        <div class="BlueBackground"></div>
+        <div class="product-content">
+          <h1>Our <br> Products</h1>
+          <div class="product-image">
+            <img src="/public/OurProducts.svg" alt="Product Image" />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="column">
+          <h2>Oat Drink</h2>
+          <ul class="product-list">
+            <li><span>Oat Drink Organic</span><span>301</span></li>
+            <li><span>Oat Drink</span><span>302</span></li>
+            <li><span>Oat Drink Organic</span><span>303</span></li>
+            <li><span>Oat Drink Chocolate</span><span>304</span></li>
+            <li><span>Oat Drink Orange Mango</span><span>305</span></li>
+            <li><span>Chilled Oat Drink</span><span>306</span></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>Oat Drink Chilled</h2>
+          <ul class="product-list">
+            <li><span>Oat Drink Organic</span><span>301</span></li>
+            <li><span>Oat Drink</span><span>302</span></li>
+            <li><span>Oat Drink Organic</span><span>303</span></li>
+            <li><span>Oat Drink Chocolate</span><span>304</span></li>
+            <li><span>Oat Drink Orange Mango</span><span>305</span></li>
+            <li><span>Chilled Oat Drink</span><span>306</span></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>Ice Cream</h2>
+          <ul class="product-list">
+            <li><span>Chocolate</span><span>501</span></li>
+            <li><span>Cold Brew Latte</span><span>308</span></li>
+            <li><span>Matcha Latte</span><span>309</span></li>
+            <li><span>Oat Drink Junior</span><span>311</span></li>
+            <li><span>Oat Drink Orange Mango</span><span>305</span></li>
+            <li><span>Oat Drink Chocolate Junior</span><span>312</span></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>On The Go</h2>
+          <ul class="product-list">
+            <li><span>Chocolate</span><span>307</span></li>
+            <li><span>Cold Brew Latte</span><span>308</span></li>
+            <li><span>Matcha Latte</span><span>309</span></li>
+            <li><span>Oat Drink Junior</span><span>311</span></li>
+            <li><span>Oat Drink Chocolate Junior</span><span>312</span></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>Cooking</h2>
+          <ul class="product-list">
+            <li><span>Chocolate</span><span>307</span></li>
+            <li><span>Cold Brew Latte</span><span>308</span></li>
+            <li><span>Matcha Latte</span><span>309</span></li>
+            <li><span>Oat Drink Junior</span><span>311</span></li>
+            <li><span>Oat Drink Orange Mango</span><span>305</span></li>
+            <li><span>Oat Drink Chocolate Junior</span><span>312</span></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  html, body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary-black);
+    color: var(--color-primary-white);
+  }
+
+  body {
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  main {
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .header {
+    margin-top: var(--spacing-token-6);
+    text-align: center;
+    margin-bottom: var(--spacing-token-4);
+    width: 100%;
+  }
+
+  .header h2 {
+    margin: 0;
+    color: var(--color-primary-white);
+  }
+
+  .header-line {
+    height: var(--spacing-token-2);
+    background-color: var(--color-secondary-pink);
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-token-4);
+    width: 100%;
+    padding: var(--spacing-token-2);
+  }
+
+  .column {
+    margin: var(--spacing-token-2);
+  }
+
+  .column h2 {
+    color: var(--color-secondary-pink);
+    padding-bottom: var(--spacing-token-1);
+  }
+
+  .product-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .product-list li {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+
+  .product {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+  }
+
+  .BlueBackground {
+    background-color: blue;
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .product-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .product-image {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    top: -40%;
+    left: 75%;
+    position: absolute;
+
+  }
+
+  .product-image img {
+    width: 90%;
+  }
+
+  .product-content h1 {
+    color: white;
+    margin-right: 20px;
+    text-align: left;
+    top: 30px;
+  }
+</style>

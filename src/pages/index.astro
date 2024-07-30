@@ -17,7 +17,12 @@ import ProductBody from "../components/ProductBody.astro";
   <body>
     <main>
       <header class="header">
-        <h1>Products</h1>
+        <div class="flex">
+          <a href="/Allproducts" class="back-link">
+            <img src="/public/pointing-hand.svg" alt="Back">
+          </a>
+        <h1>Did you know that clicking on the pointing finger will take you back to our oat-drinkable, eatable collection? Just give it a click and rediscover all our products!</h1>
+      </div>
         <div class="header-line"></div>
       </header>
       <ProductHero
@@ -27,7 +32,13 @@ import ProductBody from "../components/ProductBody.astro";
       />
 
 <ProductBody />
-
+<header class="header">
+  <div class="flex">
+    <a href="javascript:history.back()" class="back-link">
+      <img src="/public/pointing-hand.svg" alt="Back">
+    </a>
+  <h1>Hey you have now reached the end, there is nothing more to see, you can click on the finger to read about all our products again </h1>
+</div>
     </main>
   </body>
 </html>
@@ -40,9 +51,12 @@ import ProductBody from "../components/ProductBody.astro";
     background-color: black;
   }
 
-  main {
+  body {
     max-width: 1440px;
-    width: 100%;
+  }
+
+  main {
+    max-width: 90%;
   }
 
   header {
@@ -52,16 +66,35 @@ import ProductBody from "../components/ProductBody.astro";
 }
 
 header h1 {
-  margin: 0;
-  font-size: 3rem;
+  padding-top: 40px;
+  font-size: var(--font-size-headings-magda-pro---special-m);
   font-family: "MagdaPro";
   color: var(--color-primary-white);
+  padding-left: 50px;
+  line-height: 1.8;
 }
 
 .header-line {
   height: 16px;
   background-color: var( --color-secondary-pink);
+}
 
+.back-link {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Space between arrow and text */
+}
+
+.back-link img{
+  width: 140px; /* Adjust the size as needed */
+  height: 140px; /* Adjust the size as needed */
+  transform: rotate(90deg); /* Rotate the image by 90 degrees */
+  filter: invert(1); /* Invert the colors */
+}
+
+.flex {
+  display: flex;
+  align-items: top; /* Vertically center the items */
 }
 
 </style>
