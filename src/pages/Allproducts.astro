@@ -31,7 +31,7 @@ import "../styles/variables.css";
           <h2>Oat Drink</h2>
           <ul class="product-list">
             <li>
-              <a href="/index"><span>Oat Drink Organic</span></a><span>301</span
+              <a href="/Product"><span>Oat Drink Organic</span></a><span>301</span
               >
             </li>
             <li><a href="#"><span>Oat Drink</span></a><span>302</span></li>
@@ -183,12 +183,10 @@ import "../styles/variables.css";
 
   body {
     max-width: 1440px;
-    width: 100%;
   }
 
   main {
-    max-width: 90%;
-    width: 100%;
+    margin: 40px;
   }
 
   .header {
@@ -310,13 +308,13 @@ import "../styles/variables.css";
     display: flex;
     justify-content: center;
     flex: 1;
-    top: -40%;
+    top: -25%;
     left: 75%;
     position: absolute;
   }
 
   .product-image img {
-    width: 90%;
+    width: 100%;
   }
 
   .product-content h1 {
@@ -333,7 +331,7 @@ import "../styles/variables.css";
   .container {
     grid-template-columns: 1fr; /* Single column layout */
   }
-  
+
   .column {
     margin: var(--spacing-token-2) 0; /* Adjust margin for single column layout */
   }
@@ -346,16 +344,28 @@ import "../styles/variables.css";
   .product-image {
     position: relative;
     top: 0;
-    left: 50%;
-    margin-top: var(--spacing-token-4);
+    left: 20%;
+  }
+
+  .product-image img {
+    width: 50%; /* Change size to width */
   }
 
   .product-content h1 {
     text-align: center;
-    margin: 0 auto var(--spacing-token-2) auto;
+    margin: 0;
+  }
+  .BlueBackground {
+    background-color: var(--color-secondary-dark-blue);
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
   }
 
+
 }
+
 
 
 </style>

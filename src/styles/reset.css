@@ -70,25 +70,27 @@ h6 {
 
 h1 {
   font-size: clamp(
-    4rem,
-    8vw,
-    10rem
+    var(--mobile-font-size-headings-xxl),
+    12vw,
+    var(--font-size-headings-xxl)
   ); /* Minimum 2rem, preferred 8% of viewport width, maximum 9rem */
   line-height: 0.77;
-  padding-bottom: clamp(
-    1rem,
-    4vw,
-    2rem
-  ); /* Minimum 1rem, preferred 4% of viewport width, maximum 2rem */
   font-family: "Petra", sans-serif;
   letter-spacing: 0.07em;
   color: var( --color-secondary-pink);
+  padding-bottom: var(--spacing-token-4);
 }
 
 h2,
 h3,
 h4 {
   color: var(--color-primary-blue);
+  font-size: var(--font-size-headings-magda-pro---special-xl);
+  text-transform: uppercase;
+  padding-bottom: var(--spacing-token-1);
+}
+
+h3 {
   font-size: var(--font-size-headings-magda-pro---special-xl);
 }
 
