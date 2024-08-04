@@ -25,7 +25,7 @@ body::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 200%;
+  height: 280%;
   background-image: url("/public/Textures.png");
   background-repeat: repeat;
   background-size: auto;
@@ -85,13 +85,17 @@ h2,
 h3,
 h4 {
   color: var(--color-primary-blue);
-  font-size: var(--font-size-headings-magda-pro---special-xl);
   text-transform: uppercase;
   padding-bottom: var(--spacing-token-1);
+  font-size: clamp(
+    var(--font-size-headings-magda-pro---special-l),
+    4vw,
+    var(--font-size-headings-magda-pro---special-xl)
+  ); /* Minimum 2rem, preferred 8% of viewport width, maximum 9rem */
 }
 
 h3 {
-  font-size: var(--font-size-headings-magda-pro---special-xl);
+  font-size: var(--font-size-headings-magda-pro---special-m);
 }
 
 p,

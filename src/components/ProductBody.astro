@@ -50,17 +50,17 @@ import Productinfo from "../components/Productinfo.astro";
     </div>
   </div>
   <div class="box">
-    <div class="content">
-        <h3>Ingredients</h3>
-        <p>
-          Vand, HAVRE 10 %, rapsolie, surhedsregulerende middel
-          (dikaliumphosphat), mineral (calciumcarbonat), salt, vitaminer (D2,
-          riboflavin, B12).
-        </p>
-      <div class="blue-strokeline"></div>
-    </div>
     <Productinfo />
     <div class="blue-strokeline"></div>
+    <div class="content">
+      <h3>Ingredients</h3>
+      <p>
+        Vand, HAVRE 10 %, rapsolie, surhedsregulerende middel
+        (dikaliumphosphat), mineral (calciumcarbonat), salt, vitaminer (D2,
+        riboflavin, B12).
+      </p>
+  </div>
+  <div class="blue-strokeline"></div>
   </div>
 </section>
 
@@ -90,12 +90,6 @@ import Productinfo from "../components/Productinfo.astro";
     height: 3px;
     background-color: var(--color-secondary-dark-blue);
     margin-top: 10px;
-  }
-
-  .box h2 {
-    margin: 0 0 10px;
-    font-size: 56px;
-    line-height: 0.77;
   }
 
   @media (max-width: 768px) {

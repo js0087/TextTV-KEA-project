@@ -7,90 +7,84 @@ import ProductBody from "../components/ProductBody.astro";
 ---
 
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width" />
-  <title>productName</title>
-</head>
-<body>
-  <main>
-    <header class="header">
-      <h2>Our Products</h2>
-      <a href="/Allproducts" class="back-link">
-        <img src="/public/pointing-hand.svg" alt="Back">
-      </a>
-    </header>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>productName</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <h2>Products</h2>
+      </header>
 
-    <ProductHero
-      productName="Oat Drink Barista Organic"
-      description="An organically creamy, rich, and organic oat drink that is not cow’s milk, not a cream, and not really a creamer but a nice organic upgrade for your coffee. It might not deliver on the extremely high expectations set by our original Barista edition, but what it lacks in compared functionality, it makes up for in organic ingredients. Think of it more as a barista version of our organic oat drink than an organic version of our Barista edition. Made for professional organic baristas and people who like to play one at home."
-      img="test.jpg"
-    />
-    <ProductBody />
-    <div class="blue-strokeline"></div>
-    <header class="header">
-      <div class="flex">
-        <h1>Hey, you have now reached the end. There is nothing more to see. You can click on the finger to read about all our products again.</h1>
+      <ProductHero
+        productName="Oat Drink Barista Organic"
+        description="An organically creamy, rich, and organic oat drink that is not cow’s milk, not a cream, and not really a creamer but a nice organic upgrade for your coffee. It might not deliver on the extremely high expectations set by our original Barista edition, but what it lacks in compared functionality, it makes up for in organic ingredients. Think of it more as a barista version of our organic oat drink than an organic version of our Barista edition. Made for professional organic baristas and people who like to play one at home."
+        img="test.jpg"
+      />
+      <ProductBody />
+      <div class="blue-strokeline"></div>
+      <div class="back-link">
+        <a href="/">
+          <img src="/public/pointing-hand.svg" alt="Back" />
+        </a>
       </div>
-      <a href="/Allproducts" class="back-link">
-        <img src="/public/pointing-hand.svg" alt="Back">
-      </a>
-    </header>
-  </main>
-</body>
+    </main>
+  </body>
 </html>
 
-
 <style>
-@keyframes tvOn {
-  0% {
-    opacity: 0;
-    filter: brightness(0) contrast(0);
+  @keyframes tvOn {
+    0% {
+      opacity: 0;
+      filter: brightness(0) contrast(0);
+    }
+    20% {
+      opacity: 1;
+      filter: brightness(1) contrast(1);
+    }
+    30% {
+      opacity: 0;
+      filter: brightness(0) contrast(0);
+    }
+    50% {
+      opacity: 1;
+      filter: brightness(1) contrast(1);
+    }
+    55% {
+      opacity: 0;
+      filter: brightness(0) contrast(0);
+    }
+    60% {
+      opacity: 1;
+      filter: brightness(1) contrast(1);
+    }
+    100% {
+      opacity: 1;
+      filter: brightness(1) contrast(1);
+    }
   }
-  20% {
-    opacity: 1;
-    filter: brightness(1) contrast(1);
-  }
-  30% {
-    opacity: 0;
-    filter: brightness(0) contrast(0);
-  }
-  50% {
-    opacity: 1;
-    filter: brightness(1) contrast(1);
-  }
-  55% {
-    opacity: 0;
-    filter: brightness(0) contrast(0);
-  }
-  60% {
-    opacity: 1;
-    filter: brightness(1) contrast(1);
-  }
-  100% {
-    opacity: 1;
-    filter: brightness(1) contrast(1);
-  }
-}
 
-html, body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  background-color: black;
-  animation: tvOn 0.6s ease-in-out;
-}
+  html,
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    animation: tvOn 0.6s ease-in-out;
+  }
 
-body {
-  max-width: 1440px;
-}
+  body {
+    max-width: 1440px;
+  }
 
-main {
-  max-width: 90%;
-}
+  main {
+    max-width: 90%;
+  }
 
-.header {
+  .header {
     margin-top: var(--spacing-token-6);
     text-align: center;
     margin-bottom: var(--spacing-token-4);
@@ -101,31 +95,32 @@ main {
     color: var(--color-primary-white);
   }
 
-.back-link {
-  display: flex;
-  align-items: center;
-  margin-right: 0; /* Space between arrow and text */
-}
+  .back-link {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+  }
 
-.back-link img {
-  width: var(--spacing-token-8);
-  height: var(--spacing-token-8);
-  transform: rotate(90deg);
-  filter: invert(1);
-}
+  .back-link img {
+    max-width: 400px; /* Sets a max width for the SVG */
+    max-height: 400px; /* Sets a max height for the SVG */
+    transform: rotate(90deg);
+    filter: invert(1);
+  }
 
-.flex {
-  display: flex;
-  align-items: top; /* Vertically center the items */
-}
+  .flex {
+    display: flex;
+    align-items: top; /* Vertically center the items */
+  }
 
-.blue-strokeline {
-  width: 100%;
-  height: var(--spacing-token-2);
-  background-color: var(--color-secondary-dark-blue);
-  margin-top: var(--spacing-token-1);
-}
+  .blue-strokeline {
+    width: 100%;
+    height: var(--spacing-token-2);
+    background-color: var(--color-secondary-dark-blue);
+    margin-top: var(--spacing-token-1);
+  }
+
+  a {
+    color: white;
+  }
 </style>
-
-
-
