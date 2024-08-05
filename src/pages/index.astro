@@ -182,12 +182,13 @@ import "../styles/variables.css";
   }
 
   body {
-    max-width: 1440px;
+    max-width: 100%;
   }
 
   main {
     margin: 40px;
   }
+
 
   .header {
     margin-top: var(--spacing-token-6);
@@ -321,24 +322,25 @@ import "../styles/variables.css";
     color: var(--color-primary-white);
     margin-right: var(--spacing-token-2);
     text-align: left;
-    top: 30px;
   }
   ul {
     padding: 2px;
   }
 
   @media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Stack columns vertically */
+  }
+
   .column {
     margin: var(--spacing-token-1); /* Adjust margin for single column layout */
   }
-
 
   .product-image {
     position: relative;
     top: 0;
     left: 0;
   }
-
 
   .BlueBackground {
     background-color: var(--color-secondary-dark-blue);
@@ -347,8 +349,6 @@ import "../styles/variables.css";
     position: absolute;
     bottom: 0;
   }
-
-
 }
 
 
