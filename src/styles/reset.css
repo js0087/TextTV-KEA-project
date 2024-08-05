@@ -70,10 +70,10 @@ h6 {
 
 h1 {
   font-size: clamp(
-    var(--mobile-font-size-headings-xxl),
+    var(--mobile-font-size-headings-xl),
     12vw,
-    var(--font-size-headings-xxl)
-  ); /* Minimum 2rem, preferred 8% of viewport width, maximum 9rem */
+    var(--font-size-headings-xl)
+  ); 
   line-height: 0.77;
   font-family: "Petra", sans-serif;
   letter-spacing: 0.07em;
@@ -87,15 +87,12 @@ h4 {
   color: var(--color-primary-blue);
   text-transform: uppercase;
   padding-bottom: var(--spacing-token-1);
-  font-size: clamp(
-    var(--font-size-headings-magda-pro---special-l),
-    4vw,
-    var(--font-size-headings-magda-pro---special-xl)
-  ); /* Minimum 2rem, preferred 8% of viewport width, maximum 9rem */
+  font-size: 
+    var(--font-size-headings-magda-pro---special-l);
 }
 
 h3 {
-  font-size: var(--font-size-headings-magda-pro---special-m);
+  font-size: var(--font-size-headings-magda-pro---special-s);
 }
 
 p,
